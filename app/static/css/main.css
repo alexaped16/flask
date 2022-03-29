@@ -1,0 +1,22 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(159, 192, 163);
+    
+
+}
+
+.card{
+    margin-right: 75%;
+}
+
+.btn-light{
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%
+}
+
+.greeting{
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 4%
+}

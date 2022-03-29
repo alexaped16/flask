@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    
+    <div class="greeting">
+    <h1>inspo</h1>
+    </div>
+    {% for p in posts %}
+    <div class="card">
+        <div class="card-body bg-secondary" style="--bs-bg-opacity: .5;">
+            <h5 class="card-title">{{ p.name }}</h5>
+            <p class="card-text">{{ p.body }}</p>
+            <div>
+                <cite>&mdash; {{ p.description }}</cite>
+            </div>
+            <a href="#" class="btn btn-light">more</a>
+        </div>
+    </div>
+
+    {% endfor %}
+
+    <div id='photo' class="rounded mx-auto d-block">
+     
+        <img src="{{url_for('static', filename='etta-james.jpeg')}}"/>
+   
+
+{% endblock content %}
+
